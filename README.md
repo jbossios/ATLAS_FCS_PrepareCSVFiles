@@ -15,7 +15,7 @@ Use this script to produce CSV files from ROOT files to be used to train a DNN t
 
 ### How to use?
 
-This script will produce .txt files (containing average and RMS of each feature, needed for inference) and .csv files (needed for training)
+This script will produce .txt files (containing mean and std. dev. of each feature, needed for inference) and .csv files (needed for training)
 
 - Set ```Particles```
   - One CSV file will be produced for each particle, eta range and energy
