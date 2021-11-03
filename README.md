@@ -23,7 +23,7 @@ This script will produce .txt files (containing mean and std. dev. of each featu
 - Set ```InputPATH```: path to input ROOT files
 - Set ```OutputPATHBase```: location where output CSV files will be written (CSV files will be written inside a folder named accordingly the set of particles used)
 - Set ```TTreeName```: name of the TTree available in the input ROOT files
-- Set ```ProduceTXTs``` to ```True``` (unless TXTs were already produce and are available in the corresponding location)
+- Set ```ProduceTXTs``` to ```True``` (unless TXTs were already produced and are available in the corresponding location)
 
 Run it:
 
