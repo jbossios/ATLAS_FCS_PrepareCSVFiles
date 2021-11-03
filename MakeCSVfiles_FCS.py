@@ -1,8 +1,9 @@
 ##################################################################################################################
 #                                                                                                                #
-# Author:  Jona Bossio (jbossios@cern.ch)                                                                        #
 # Purpose: Create CSV files from ROOT files with firstPCAbin values                                              #
 #          This is needed to obtain the current extrapolation weights and compare with those predicted by the NN #
+# Author:  Jona Bossio (jbossios@cern.ch)                                                                        #
+# Usage:   python MakeCSVfiles_FCS.py                                                                            #
 #                                                                                                                #
 ##################################################################################################################
 

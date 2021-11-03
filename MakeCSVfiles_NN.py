@@ -1,17 +1,20 @@
 ######################################################
 #                                                    #
-# Author:  Jona Bossio (jbossios@cern.ch)            #
 # Purpose: Create CSV files from ROOT files          #
 #          This CSV files will be used to train a NN #
+# Author:  Jona Bossio (jbossios@cern.ch)            #
+# Usage:   MakeCSVfiles_NN.py                        #
 #                                                    #
 ######################################################
 
 #!/usr/bin/env python3
 
-Particles = ['pions']
+#Particles = ['pions']
 #Particles = ['photons']
 #Particles = ['electrons']
 #Particles = ['pions','electrons','photons']
+#Particles = ['pions','electrons']
+Particles = ['electrons','photons']
 
 # PATH to input ROOT files
 InputPATH = '/eos/user/j/jbossios/FastCaloSim/MicheleInputs/'
@@ -85,11 +88,11 @@ if ProduceTXTs:
       # remove things I don't need
       Variables   = ['e_{}'.format(x) for x in Layers]
       Variables  += ['extrapWeight_{}'.format(x) for x in Layers]
-      if Particle == 'photons' or Particle == 'electrons':
+      if (Particle == 'photons' or Particle == 'electrons') and 'pions' in Particles:
         for layer in ['13','14']:
           Variables.remove('e_{}'.format(layer))
           Variables.remove('extrapWeight_{}'.format(layer))
-      df          = df[Variables]
+      df = df[Variables]
       # add new column with true energy
       df['etrue'] = float(Energy)
       # add dummy data
