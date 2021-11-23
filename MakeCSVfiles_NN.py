@@ -20,7 +20,7 @@ Particles = ['electrons','photons']
 InputPATH = '/eos/user/j/jbossios/FastCaloSim/MicheleInputs/'
 
 # Where to locate output CSV files
-OutputPATHBase = '/eos/user/j/jbossios/FastCaloSim/MicheleInputsCSV/'
+OutputPATHBase = '/eos/atlas/atlascerngroupdisk/proj-simul/AF3_Run3/Jona/MicheleInputsCSV/'
 
 # Name of TTree
 TTreeName = 'rootTree'
